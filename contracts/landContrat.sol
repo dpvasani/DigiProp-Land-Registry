@@ -261,7 +261,7 @@ contract Land {
 
     function transferOwnership(uint _requestId,string memory documentUrl) public returns(bool)
     {
-        require(isLandInspector(msg.sender));
+        require(isLandInspector(msg.sender));   
         if(LandRequestMapping[_requestId].isPaymentDone==false)
             return false;
         documentId++;

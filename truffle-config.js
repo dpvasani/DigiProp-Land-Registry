@@ -7,7 +7,7 @@ module.exports = {
     },
     advanced: {
       websockets: true, // Enable EventEmitter interface for web3 (default: false)
-    },x
+    },
   },
   contracts_build_directory: "./src/contracts/",
   compilers: {

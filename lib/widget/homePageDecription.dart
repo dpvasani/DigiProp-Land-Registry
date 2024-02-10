@@ -63,7 +63,7 @@ Blockchain''',
             const SizedBox(width: 40),
             GestureDetector(
               onTap: () {
-                launchUrl("https://youtu.be/0Coz_ivOaHs");
+                launchUrl("https://youtu.be/Gih0trIDgvA");
               },
               child: MouseRegion(
                 onHover: (PointerHoverEvent evt) {

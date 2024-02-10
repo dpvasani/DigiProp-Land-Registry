@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:land_registration/widget/header.dart';
-import 'package:land_registration/widget/homePageDecription.dart';
+import 'package:land_registration/widget/';
 import 'package:flutter_svg/flutter_svg.dart';
-import '../constant/utils.dart';
+import '../constant/utils.dart';homePageDecription.dart
 
 class home_page extends StatefulWidget {
   const home_page({Key? key}) : super(key: key);
