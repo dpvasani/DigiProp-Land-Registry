@@ -18,10 +18,8 @@
 6. Metamask
 
 ## Demo
-Our Dapp is demonstrated in this video [here](https://youtu.be/0Coz_ivOaHs)
+Our Dapp is demonstrated in this video [here](https://youtu.be/Gih0trIDgvA)
 
-## Run Application on deployed website
-Check out the deployed website [here](https://landregistry.live/)
 
 https://landregistry.live/
 
