@@ -103,3 +103,67 @@ Received Request           |                   Make Payment
 Transfer ownership,Seller,buyer photo capture   |                Witness info,photo capture,transfer ownership 
 :---------------------------------:        |      :------------------------------:
 <img src="screenshots/Screenshot14.png" height="225">     |<img src="screenshots/Screenshot13.png" height="225">
+
+## Contract
+
+This Solidity smart contract is designed to manage a decentralized land marketplace, where users can register, verify their identity, add land for sale, and initiate land purchase transactions. Let's break down the main components and functionalities of the contract:
+
+### Contract Structure:
+
+- **`Land` Contract:** The main contract is named `Land`.
+- **State Variables:**
+    - `contractOwner`: Address of the owner of the contract.
+    - Various counters (`inspectorsCount`, `userCount`, `landsCount`, `documentId`, `requestCount`) to keep track of the number of inspectors, users, lands, documents, and requests.
+- **Mappings:**
+    - `InspectorMapping`, `UserMapping`, `lands`, `LandRequestMapping`: These mappings are used to store information about inspectors, users, lands, and land requests respectively.
+
+### Structs:
+
+- `Landreg`: Represents information about a piece of land.
+- `User`: Represents information about a user.
+- `LandInspector`: Represents information about a land inspector.
+- `LandRequest`: Represents a request to buy a specific piece of land.
+
+### Enums:
+
+- `reqStatus`: Represents the possible states of a land purchase request (`requested`, `accepted`, `rejected`, `paymentdone`, `completed`).
+
+### Functions:
+
+### Contract Owner Management:
+
+- `isContractOwner`: Checks if a given address is the contract owner.
+- `changeContractOwner`: Allows the contract owner to change ownership to another address.
+
+### Land Inspector Management:
+
+- `addLandInspector`: Allows the contract owner to add a land inspector.
+- `removeLandInspector`: Allows the contract owner to remove a land inspector.
+- `ReturnAllLandIncpectorList`: Returns a list of all land inspectors.
+
+### User Management:
+
+- `registerUser`: Allows users to register by providing personal information.
+- `verifyUser`: Allows land inspectors to verify a user's identity.
+- `isUserVerified`: Checks if a user is verified.
+- `ReturnAllUserList`: Returns a list of all registered users.
+
+### Land Management:
+
+- `addLand`: Allows users to add a piece of land for sale.
+- `verifyLand`: Allows land inspectors to verify a piece of land.
+- `isLandVerified`: Checks if a piece of land is verified.
+- `makeItforSell`: Marks a piece of land as available for sale.
+- `requestforBuy`: Allows users to request to buy a piece of land.
+- `acceptRequest` and `rejectRequest`: Allows landowners to accept or reject a land purchase request.
+- `requesteStatus`: Checks the status of a land purchase request.
+- `landPrice`: Returns the price of a piece of land.
+- `makePayment`: Allows buyers to make payments for accepted land purchase requests.
+- `returnPaymentDoneList`: Returns a list of completed land purchase requests.
+- `transferOwnership`: Allows land inspectors to transfer ownership of a verified land after successful payment and completion.
+
+### Testing Function:
+
+- `makePaymentTestFun`: A testing function to facilitate direct payment transfers.
+
+Note: The code assumes a certain level of trust in the interactions, and in a real-world scenario, additional security measures and validations may be necessary.
