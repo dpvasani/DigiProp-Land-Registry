@@ -20,9 +20,6 @@
 ## Demo
 Our Dapp is demonstrated in this video [here](https://youtu.be/Gih0trIDgvA)
 
-
-https://landregistry.live/
-
 This is for demonstration purposes only. With this key, you can log in as Land Inspector:
  <pre><b>6b86cddfedbec68ed2a1c7e14b993840a0848595ba5787aec9e8a38b18f0d96a</b></pre>
 For user: <pre><b>3ed4aff1a8ff8e28df3cd307112f9166886edcc85a27136908e3b1687b111f89</b></pre>\
